@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <title>Tweet</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div id="main" class="card mb-3">
+            <div class="card-header bg-transparent font-weight-bold">
+              Home
+              <img
+                src="sparkle.png"
+                class="float-right"
+                style="width: 30px; height: 30px"
+                alt=""
+              />
+            </div>
+
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="https://images.unsplash.com/profile-1446404465118-3a53b909cc82?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=3ef46b07bb19f68322d027cb8f9ac99f"
+                    alt="profile-pic"
+                    style="border-radius: 50px"
+                  />
+                </div>
+                <div class="col-md-10 mt-3">
+                  <form id="tweetForm" autocomplete="off">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control border-0"
+                        id="tweet"
+                        placeholder="What's Happening?"
+                      />
+                    </div>
+                    <span style="color: #209fee; font-size: 1.5em">
+                      <i class="bi bi-card-image mr-2"></i>
+                      <i class="bi bi-camera-video mx-2"></i>
+                      <i class="bi bi-file-bar-graph mx-2"></i>
+                      <i class="bi bi-emoji-smile mx-2"></i>
+                    </span>
+
+                    <button
+                      type="submit"
+                      class="btn btn-primary float-right"
+                      style="border-radius: 50px; background-color: #209fee"
+                    >
+                      Tweet
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="list-group" id="tweets">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="https://images.unsplash.com/profile-1445832407811-c04ed64d238b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=a6d8602c855914fe13650eedd5996cb5"
+                    alt="profile-pic"
+                    style="border-radius: 50px"
+                  />
+                </div>
+                <div class="col-10">
+                  <p>
+                    <b>Jordan</b> @jbwxyzed 10m
+                    <i class="bi bi-trash float-right"></i>
+                  </p>
+                  <p>Yesterday I ate a clock. It was very time consuming</p>
+                  <span
+                    ><i class="bi bi-chat mr-5"> 20</i
+                    ><i class="bi bi-heart mx-5"> 5</i
+                    ><i class="bi bi-upload mx-5"></i
+                  ></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=356bd4b76a3d4eb97d63f45b818dd358"
+                    alt="profile-pic"
+                    style="border-radius: 50px"
+                  />
+                </div>
+                <div class="col-10">
+                  <p>
+                    <b>John</b> @TheRealJohnDoe 17m
+                    <i class="bi bi-trash float-right"></i>
+                  </p>
+                  <p>Does anyone need an ark? I Noah guy</p>
+                  <span
+                    ><i class="bi bi-chat mr-5"> 2</i
+                    ><i class="bi bi-heart mx-5"> 10</i
+                    ><i class="bi bi-upload mx-5"></i
+                  ></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="https://images.unsplash.com/profile-1449546653256-0faea3006d34?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=64&w=64"
+                    alt="profile-pic"
+                    style="border-radius: 50px"
+                  />
+                </div>
+                <div class="col-10">
+                  <p>
+                    <b>Mason</b> @MasonPhotography 40m
+                    <i class="bi bi-trash float-right"></i>
+                  </p>
+                  <p>Testing out my new camera</p>
+                  <div class="mb-2">
+                    <img
+                      src="https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd060fe209b4a56733a1dcc9b5aea53a"
+                      alt=""
+                      class="rounded"
+                    />
+                  </div>
+                  <span
+                    ><i class="bi bi-chat mr-5"> 2</i
+                    ><i class="bi bi-heart mx-5"> 20</i
+                    ><i class="bi bi-upload mx-5"> 5</i></span
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="https://images.unsplash.com/profile-1441298803695-accd94000cac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5a9dc749c43ce5bd60870b129a40902f"
+                    alt="profile-pic"
+                    style="border-radius: 50px"
+                  />
+                </div>
+                <div class="col-10">
+                  <p>
+                    <b>Benjamin</b> @BeamerBenzBenji 55m
+                    <i class="bi bi-trash float-right"></i>
+                  </p>
+                  <p>
+                    My wife is really mad at the fact that I have no sense of
+                    direction. So I packed up my stuff and right
+                  </p>
+                  <span
+                    ><i class="bi bi-chat mr-5"> 200</i
+                    ><i class="bi bi-heart mx-5"> 1.5k</i
+                    ><i class="bi bi-upload mx-5"></i
+                  ></span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
